@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification de Jour de Travail</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Vérification de Jour de Travail</h1>
+    <script>
+        // Exemples d'utilisation de la fonction jourTravaille
+        jourTravaille(new Date(2024, 0, 1)); // Nouvel An (jour férié)
+        jourTravaille(new Date(2024, 3, 14)); // Fête du Travail (jour férié)
+        jourTravaille(new Date(2024, 11, 25)); // Noël (jour férié)
+        jourTravaille(new Date(2024, 4, 1)); // Jour normal
+        jourTravaille(new Date(2024, 4, 2)); // Samedi (week-end)
+        jourTravaille(new Date(2024, 4, 3)); // Dimanche (week-end)
+    </script>
+</body>
+</html>
