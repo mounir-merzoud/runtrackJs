@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Value Extractor</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JSON Value Extractor</h1>
+
+    <!-- Zone pour entrer une chaîne JSON -->
+    <label for="jsonInput">Chaîne JSON :</label>
+    <textarea id="jsonInput" rows="4" placeholder='{"name": "John", "age": 30, "city": "Marseille"}'></textarea>
+
+    <!-- Zone pour entrer la clé -->
+    <label for="keyInput">Clé :</label>
+    <input type="text" id="keyInput" placeholder="city">
+
+    <!-- Bouton pour obtenir la valeur -->
+    <button id="getValueButton">Obtenir la valeur</button>
+
+    <!-- Zone pour afficher le résultat -->
+    <div id="result"></div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

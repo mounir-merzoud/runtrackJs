@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Bulbasaur", "type": ["Grass", "Poison"] },
+    { "id": 2, "name": "Ivysaur", "type": ["Grass", "Poison"] },
+    { "id": 3, "name": "Venusaur", "type": ["Grass", "Poison"] },
+    { "id": 4, "name": "Charmander", "type": ["Fire"] },
+    { "id": 5, "name": "Charmeleon", "type": ["Fire"] },
+    { "id": 6, "name": "Charizard", "type": ["Fire", "Flying"] }
+]

@@ -1,0 +1,44 @@
+/* Ajout de quelques styles pour rendre la page plus agréable */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#jsonInput, #keyInput {
+    width: 300px;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#jsonInput {
+    height: 100px;
+}
+
+#keyInput {
+    width: calc(100% - 20px);
+}
+
+#getValueButton {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#getValueButton:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
