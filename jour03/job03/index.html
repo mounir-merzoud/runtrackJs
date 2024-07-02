@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu du Taquin avec jQuery UI</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        #puzzleContainer {
+            width: 300px; /* Based on the total width of the tiles */
+            height: 300px;
+            position: relative;
+            margin: 20px auto;
+        }
+        .puzzlePiece {
+            width: 100px; /* Width of each tile */
+            height: 100px; /* Height of each tile */
+            position: absolute;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #empty {
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="puzzleContainer">
+        <div class="puzzlePiece" style="background-image: url('logo1.PNG');" id="tile1"></div>
+        <div class="puzzlePiece" style="background-image: url('logo2.PNG');" id="tile2"></div>
+        <div class="puzzlePiece" style="background-image: url('logo3.PNG');" id="tile3"></div>
+        <div class="puzzlePiece" style="background-image: url('logo4.PNG');" id="tile4"></div>
+        <div class="puzzlePiece" style="background-image: url('logo5.PNG');" id="tile5"></div>
+        <div class="puzzlePiece" style="background-image: url('logo6.PNG');" id="tile6"></div>
+        <div class="puzzlePiece" style="background-image: url('logo7.PNG');" id="tile7"></div>
+        <div class="puzzlePiece" style="background-image: url('logo8.PNG');" id="tile8"></div>
+        <div class="puzzlePiece" id="empty"></div> <!-- The empty spot -->
+    </div>
+    <button onclick="resetGame()">Recommencer</button>
+    <script src="script.js"></script>
+</body>
+</html>

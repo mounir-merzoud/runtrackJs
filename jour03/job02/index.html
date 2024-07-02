@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Job 02 - Rearrange Images with jQuery UI</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        #imageContainer {
+            width: 600px; /* Assume each image is 100px wide */
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #imageContainer img {
+            width: 100px; /* Adjust as necessary to fit your images */
+            height: auto; /* Keeps the aspect ratio intact */
+            cursor: pointer;
+            margin: 0; /* Removes space between images */
+            padding: 0; /* Removes padding around images */
+        }
+        .message {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer">
+        <img src="arc1.png" alt="Arc 1">
+        <img src="arc2.png" alt="Arc 2">
+        <img src="arc3.png" alt="Arc 3">
+        <img src="arc4.png" alt="Arc 4">
+        <img src="arc5.png" alt="Arc 5">
+        <img src="arc6.png" alt="Arc 6">
+    </div>
+    <button id="checkOrderButton">Vérifier l'ordre</button>
+    <p class="message" id="winMessage" style="color: green;">Vous avez gagné</p>
+    <p class="message" id="loseMessage">Vous avez perdu</p>
+    <script src="script.js"></script>
+</body>
+</html>

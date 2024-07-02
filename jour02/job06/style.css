@@ -1,0 +1,12 @@
+/* Styles par défaut de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fa0909;
+    color: #333;
+}
+
+/* Styles spécifiques à La Plateforme_ */
+.la-plateforme {
+    background-color: #2a0bee;
+    color: #16f512;
+}
