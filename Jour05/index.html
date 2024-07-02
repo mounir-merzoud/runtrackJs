@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion et Inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Connexion et Inscription</h1>
+
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Connexion</h2>
+            <form id="connexionForm">
+                <label for="emailConnexion">Email :</label>
+                <input type="email" id="emailConnexion" name="email" required>
+                <div id="emailConnexionError" class="error"></div>
+
+                <label for="passwordConnexion">Mot de passe :</label>
+                <input type="password" id="passwordConnexion" name="password" required>
+                <div id="passwordConnexionError" class="error"></div>
+
+                <button type="submit">Se connecter</button>
+                <div id="connexionMessage" class="message"></div>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <h2>Inscription</h2>
+            <form id="inscriptionForm">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <div id="nomError" class="error"></div>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+                <div id="prenomError" class="error"></div>
+
+                <label for="emailInscription">Email :</label>
+                <input type="email" id="emailInscription" name="email" required>
+                <div id="emailInscriptionError" class="error"></div>
+
+                <label for="passwordInscription">Mot de passe :</label>
+                <input type="password" id="passwordInscription" name="password" required>
+                <div id="passwordInscriptionError" class="error"></div>
+
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required>
+                <div id="adresseError" class="error"></div>
+
+                <label for="codePostal">Code postal :</label>
+                <input type="text" id="codePostal" name="codePostal" required pattern="\d{5}">
+                <div id="codePostalError" class="error"></div>
+
+                <button type="submit">S'inscrire</button>
+                <div id="inscriptionMessage" class="message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
